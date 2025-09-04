@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mens Bracelets</title>
+    <title>Login</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://kit.fontawesome.com/f1de605cbf.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -36,27 +37,30 @@
                 <a href="Women.html#womens">Womens Bracelets</a>
             </div>
         </li>
-      
-         <li><a href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
-            <li><a href="registration.html"><i class="fa-solid fa-user-plus"></i></a></li>
+        <li><a href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
+        <li><a href="registration.html"><i class="fa-solid fa-user-plus"></i></a></li>
     </ul>
 </nav>
 
-    <h1>Mens Bracelets</h1>
 
-    <section id="mens">
-        <h2>Our Collection</h2>
-        <img src="images/bracelets/Mens/Box Bracelets.jpg" alt="Box Bracelet" class="product-img">
-        <h2>Box Bracelets</h2> <br>
-        <img src="images/bracelets/Mens/Cuban Bracelets.jpg" alt="Cuban Bracelet" class="product-img">
-        <h2>Curb Bracelets</h2>
-        <br>
-        <img src="images/bracelets/Mens/Curb Bracelets.jpg" alt="Curb Bracelet" class="product-img">
-        <h2>Cuban Bracelets</h2>
-        <br>
-    </section>
+    <div class="web-form">
 
-    
+        <form>
+            <h1>Login </h1>
+            <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" />
+            <input type="text" name="lastname" id="lastname" placeholder="Enter your last name" />
+            <input type="email" name="useremail" placeholder="Enter your email" required />
+            <span id="emailError"></span>
+            
+            <input type="password" name="userpassword" placeholder="Enter your password" required />
+            <span id="passwordError"></span>
+            
+            <span id="result"></span>
+            
+            <input type="submit" value="Login" onclick="VerifyUser(this.form); return false" />
+            <p>If you are new than ! <a href="registration.html">Register here.</a></p>
+        </form>
+    </div>
 
 </body>
 

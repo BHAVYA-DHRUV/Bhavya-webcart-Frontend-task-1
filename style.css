@@ -1,39 +1,29 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  line-height: 1.6;
+  color: #333;
 }
 
 .navbar {
   background: #4b2e56;
   display: flex;
   padding: 10px;
+  justify-content: center;
 }
 
 .navbar ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
 }
 
@@ -46,9 +36,11 @@ a {
   text-decoration: none;
   padding: 12px 18px;
   display: block;
+  transition: background 0.3s;
 }
 
-.navbar a:hover {
+.navbar a:hover,
+.navbar a.active {
   background: #6b3f7a;
 }
 
@@ -78,14 +70,16 @@ a {
   display: flex;
 }
 
-h1 {
+h1,
+h2 {
   text-align: center;
   margin: 20px 0;
+  color: #4b2e56;
 }
 
 p {
   text-align: center;
-  margin: 20px 0;
+  margin: 10px 0 20px;
 }
 
 .product-img {
@@ -102,8 +96,129 @@ section {
   margin: 20px 0;
 }
 
-h2 {
-  margin-bottom: 15px;
-  color: #4b2e56;
+.web-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 320px;
   text-align: center;
 }
+
+form h1 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.6rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border 0.3s;
+}
+
+form input:focus {
+  border-color: #6c63ff;
+  outline: none;
+}
+
+form input[type="submit"],
+form button {
+  width: 100%;
+  padding: 10px;
+  background: #6c63ff;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+  background: #5548d9;
+}
+
+form p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+form a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+span {
+  display: block;
+  color: red;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+#result {
+  display: block;
+  margin-top: 10px;
+}
+
+i {
+  font-size: 18px;
+  color: white;
+  margin-top: 4px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+i:hover {
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    width: 100%;
+  }
+
+  .dropdown {
+    position: static;
+    box-shadow: none;
+  }
+}
+@media (max-width: 480px) {
+  .product-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  form {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}
+
+
+
+
