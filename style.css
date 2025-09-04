@@ -9,66 +9,73 @@ body {
   line-height: 1.6;
 }
 
-.navbar {
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
   overflow: hidden;
-  background-color: #333;
-  font-family: Arial;
+}
+
+.navbar {
+  background: #4b2e56;
+  display: flex;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  position: relative;
 }
 
 .navbar a {
-  float: left;
-  font-size: 16px;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
+  padding: 12px 18px;
+  display: block;
+}
+
+.navbar a:hover {
+  background: #6b3f7a;
 }
 
 .dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-.dropdown-content {
-  display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 180px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+.dropdown a {
+  color: #333;
+  padding: 10px 15px;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
+.dropdown a:hover {
+  background: #f4f4f4;
+  color: #4b2e56;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.navbar li:hover .dropdown {
+  display: flex;
 }
 
 h1 {
@@ -77,24 +84,26 @@ h1 {
 }
 
 p {
-  padding: 0 20px;
-  margin-bottom: 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.product-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #4b2e56;
   text-align: center;
 }
-
-.image-row {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 110px;
-}
-
-.image-row img {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
-  margin: 0;
-  display: inline-block;
-}
-
