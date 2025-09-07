@@ -1,10 +1,5 @@
 # Jewel E-Commerce Website
 
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)\
-[![Version](https://img.shields.io/badge/version-1.0-blue)](https://github.com/yourusername/jewel-ecommerce)\
-[![Made
-With](https://img.shields.io/badge/Made%20With-HTML%2CCSS%2CJS-orange)](https://developer.mozilla.org/)
-
 A modern, responsive jewelry e-commerce website built with **HTML, CSS,
 and JavaScript**.\
 The platform allows users to browse various categories of jewelry, view
