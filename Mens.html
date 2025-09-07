@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mens Bracelets</title>
+    <title>Jewel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <script src="https://kit.fontawesome.com/f1de605cbf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
     <div class="top-bar">
         Free 🚚 For Prepaid Orders Above Rs.3000. <a href="Necklaces.html">Shop Now</a>
     </div>
@@ -48,11 +51,13 @@
             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </div>
-
     <nav class="navbar">
-        <div class="menu-toggle" id="menu-toggle">
-            <i class="fa fa-bars"></i>
-        </div>
+        <span class="material-symbols-outlined hamburger" onclick="toggleMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+        </span>
+
 
         <ul id="nav-links">
             <li><a href="index.html">Home</a></li>
@@ -78,6 +83,8 @@
                     <a href="Women.html#womens">Womens Bracelets</a>
                 </div>
             </li>
+
+
         </ul>
     </nav>
 
@@ -89,7 +96,7 @@
             </div>
             <button class="close-btn" id="close-btn">&times;</button>
         </div>
-      
+
         <div class="tab-content active" id="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -103,23 +110,18 @@
                 </li>
             </ul>
         </div>
-
-        <!-- CATEGORIES tab -->
         <div class="tab-content" id="categories">
             <ul>
                 <li><a href="Necklaces.html">Necklaces</a></li>
                 <li><a href="Earrings.html">Earrings</a></li>
                 <li><a href="Mens.html">Bracelets</a></li>
                 <li><a href="Women.html">Women’s Bracelets</a></li>
-                <li><a href="#">Anklets</a></li>
-                <li><a href="#">Nose Pins</a></li>
-                <li><a href="#">Maang Tikka</a></li>
-                <li><a href="#">Toe Rings</a></li>
             </ul>
         </div>
     </div>
- 
+
     <div class="overlay" id="overlay"></div>
+
 
     <h1>Mens Bracelets</h1>
 
@@ -134,6 +136,7 @@
         <h2>Cuban Bracelets</h2>
         <br>
     </section>
+    <script src="script.js"></script>
 
 </body>
 
