@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Soni Fashion Header</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/index-desktop-menu.css">
+  <link rel="stylesheet" href="assets/css/index-section-bar.css">
+  <link rel="stylesheet" href="assets/css/index-sideb.css">
+
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span>Free shipping over ₹999 • Easy returns</span>
+      <a href="tel:+916359076368">Support: +91 6359076368</a>
+    </div>
+  </div>
+  <!-- ================= HEADER ================= -->
+  <nav class="navbar-sheh px-3">
+    <!-- Mobile Hamburger -->
+    <button class="hamburger" id="menuToggle"><i class="bi bi-list"></i></button>
+
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="assets/img/she's_Logo.jpg" alt="she's Logo">
+      <span class="navbar-text">SHE’s Jewels</span>
+      <span class="navbar-slogan">Feel Unique . Feel Exclusive</span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <div class="navbar-menu">
+      <!-- MEN -->
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link"><i class="bi bi-person-standing"></i> Men</a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-link" data-category="men_chains">Chains ▸</a>
+          <a href="#" class="dropdown-link" data-category="men_bracelets">Bracelets ▸</a>
+          <a href="#" class="dropdown-link" data-category="men_rings">Rings ▸</a>
+          <a href="#" class="dropdown-link" data-category="men_kada">Kada ▸</a>
+          <a href="#" class="dropdown-link" data-category="men_pendants">Pendants ▸</a>
+        </div>
+      </div>
+
+      <!-- WOMEN -->
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link"><i class="bi bi-person-standing-dress"></i> Women</a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-link" data-category="women_chains">Chains ▸</a>
+          <a href="#" class="dropdown-link" data-category="women_bracelets">Bracelets ▸</a>
+          <a href="#" class="dropdown-link" data-category="women_rings">Rings ▸</a>
+          <a href="#" class="dropdown-link" data-category="women_earrings">Earrings ▸</a>
+          <a href="#" class="dropdown-link" data-category="women_pendants">Pendants ▸</a>
+          <a href="#" class="dropdown-link" data-category="women_bangles">Bangles ▸</a>
+          <a href="#" class="dropdown-link" data-category="women_nosepins">Nosepins ▸</a>
+          <a href="#" class="dropdown-link" data-category="women_necklaces">Necklaces ▸</a>
+        </div>
+      </div>
+
+      <!-- 1 GRAM JEWELLERY -->
+
+      <div class="nav-item dropdown one-gram">
+        
+        <a href="#" class="nav-link"><i class="bi bi-gem"></i> 1 Gram Jewellery</a>
+        <div class="dropdown-menu">
+          <div class="submenu-parent">
+            <span>Men ▸</span>
+            <div class="submenu">
+              <a href="#" class="dropdown-link" data-category="men_chains">Chains ▸</a>
+              <a href="#" class="dropdown-link" data-category="men_bracelets">Bracelets ▸</a>
+              <a href="#" class="dropdown-link" data-category="men_rings">Rings ▸</a>
+              <a href="#" class="dropdown-link" data-category="men_kada">Kada ▸</a>
+              <a href="#" class="dropdown-link" data-category="men_pendants">Pendants ▸</a>
+            </div>
+          </div>
+
+          <div class="submenu-parent">
+            <span>Women ▸</span>
+            <div class="submenu">
+              <a href="#" class="dropdown-link" data-category="women_chains">Chains ▸</a>
+              <a href="#" class="dropdown-link" data-category="women_bracelets">Bracelets ▸</a>
+              <a href="#" class="dropdown-link" data-category="women_rings">Rings ▸</a>
+              <a href="#" class="dropdown-link" data-category="women_earrings">Earrings ▸</a>
+              <a href="#" class="dropdown-link" data-category="women_pendants">Pendants ▸</a>
+              <a href="#" class="dropdown-link" data-category="women_bangles">Bangles ▸</a>
+              <a href="#" class="dropdown-link" data-category="women_nosepins">Nosepins ▸</a>
+              <a href="#" class="dropdown-link" data-category="women_necklaces">Necklaces ▸</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Icons -->
+      <div class="navbar-actions">
+        <i class="bi bi-search nav-icon" id="searchIcon"></i>
+        <i class="bi bi-person nav-icon" id="profile"></i>
+        <i class="bi bi-heart nav-icon" id="widgetlist"></i>
+        <i class="bi bi-cart nav-icon" id="cartIcon"></i>
+      </div>
+
+  </nav>
+
+  <!-- Sidebar Overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Sidebar Panels -->
+  <div class="sidebar-panel" id="sidebarPanel"
+    style="display:none; position:fixed; top:0; right:0; width:300px; height:100%; background:#fff; z-index:10000; overflow-y:auto; box-shadow:-2px 0 12px rgba(0,0,0,0.2);">
+
+    <!-- Search Panel -->
+    <div class="sidebar-search" id="sidebarSearch" style="display:none; padding:20px; border-bottom:1px solid #eee;">
+      <input type="text" placeholder="Search..." class="form-control">
+    </div>
+
+    <!-- Cart Panel -->
+    <div class="sidebar-cart" id="sidebarCart" style="display:none; padding:20px; border-bottom:1px solid #eee;">
+      <h5>Cart Items</h5>
+      <ul>
+        <li>Item 1 - $10</li>
+        <li>Item 2 - $25</li>
+        <li>Item 3 - $40</li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <!-- ================= SIDEBAR (Mobile Menu) ================= -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <div class="sidebar-menu" id="sidebarMenu">
+    <!-- Header -->
+    <div class="sidebar-header">
+      <span>SHE’s Jewels</span>
+      <button class="sidebar-close" id="menuClose"><i class="bi bi-x-lg"></i></button>
+    </div>
+
+    <!-- Tabs -->
+    <div class="sidebar-tabs">
+      <button class="sidebar-tab active" data-tab="menu">MENU</button>
+      <button class="sidebar-tab" data-tab="categories">CATEGORIES</button>
+    </div>
+
+    <!-- MENU TAB -->
+    <div class="sidebar-content active" id="menuTab">
+      <div class="sidebar-links">
+        <!-- Men -->
+        <div class="sidebar-link has-submenu">
+          <i class="bi bi-person-standing"></i> Men
+          <span class="toggle-icon"><i class="bi bi-chevron-compact-down"></i></span>
+        </div>
+        <ul class="submenu">
+          <li><a href="#">Chains</a></li>
+          <li><a href="#">Bracelets</a></li>
+          <li><a href="#">Rings</a></li>
+          <li><a href="#">Kada</a></li>
+          <li><a href="#">Pendants</a></li>
+        </ul>
+
+        <!-- Women -->
+        <div class="sidebar-link has-submenu">
+          <i class="bi bi-person-standing-dress"></i> Women
+          <span class="toggle-icon"><i class="bi bi-chevron-compact-down"></i></span>
+        </div>
+        <ul class="submenu">
+          <li><a href="#">Chains</a></li>
+          <li><a href="#">Bracelets</a></li>
+          <li><a href="#">Rings</a></li>
+          <li><a href="#">Earrings</a></li>
+          <li><a href="#">Pendants</a></li>
+          <li><a href="#">Bangles</a></li>
+          <li><a href="#">Nosepins</a></li>
+          <li><a href="#">Necklaces</a></li>
+        </ul>
+
+        <!-- 1 Gram Jewellery -->
+        <!-- 1 Gram Jewellery -->
+        <div class="sidebar-link has-submenu">
+          <i class="bi bi-gem"></i> 1 Gram Jewellery
+          <span class="toggle-icon"><i class="bi bi-chevron-compact-down"></i></span>
+        </div>
+        <ul class="submenu">
+          <!-- Men Nested -->
+          <li>
+            <div class="sidebar-link has-submenu">
+              Men
+              <span class="toggle-icon"><i class="bi bi-chevron-compact-down"></i></span>
+            </div>
+            <ul class="submenu">
+              <li><a href="#">Chains</a></li>
+              <li><a href="#">Bracelets</a></li>
+              <li><a href="#">Rings</a></li>
+              <li><a href="#">Kada</a></li>
+              <li><a href="#">Pendants</a></li>
+            </ul>
+          </li>
+
+          <!-- Women Nested -->
+          <li>
+            <div class="sidebar-link has-submenu">
+              Women
+              <span class="toggle-icon"><i class="bi bi-chevron-compact-down"></i></span>
+            </div>
+            <ul class="submenu">
+              <li><a href="#">Chains</a></li>
+              <li><a href="#">Bracelets</a></li>
+              <li><a href="#">Rings</a></li>
+              <li><a href="#">Earrings</a></li>
+              <li><a href="#">Pendants</a></li>
+            </ul>
+          </li>
+        </ul>
+
+
+        <!-- Other links -->
+        <div class="sidebar-link"><i class="bi bi-truck"></i> Track Order</div>
+        <div class="sidebar-link"><i class="bi bi-heart"></i> Wishlist</div>
+        <div class="sidebar-link"><i class="bi bi-search"></i> Search</div>
+        <div class="sidebar-link"><i class="bi bi-person"></i> Login / Signup</div>
+      </div>
+
+      <!-- Contact -->
+      <div class="sidebar-contact">
+        <p><strong>Need help?</strong></p>
+        <p><i class="bi bi-telephone"></i> +91 281 6777775</p>
+        <p><i class="bi bi-envelope"></i> support@soni.fashion</p>
+      </div>
+      <div class="sidebar-link"><i class="bi bi-info-circle"></i> Information</div>
+    </div>
+
+    <!-- CATEGORIES TAB -->
+    <div class="sidebar-content" id="categoriesTab">
+      <div class="sidebar-links">
+        <div class="sidebar-link"><i class="bi bi-link"></i> Chains</div>
+        <div class="sidebar-link"><i class="bi bi-link"></i> Bracelets</div>
+        <div class="sidebar-link"><i class="bi bi-link"></i> Earrings</div>
+        <div class="sidebar-link"><i class="bi bi-link"></i> Rings</div>
+        <div class="sidebar-link"><i class="bi bi-link"></i> Bangles</div>
+        <div class="sidebar-link"><i class="bi bi-link"></i> Pendants</div>
+        <div class="sidebar-link"><i class="bi bi-link"></i> Anklets</div>
+        <div class="sidebar-link"><i class="bi bi-link"></i> Nose Pins</div>
+        <div class="sidebar-link"><i class="bi bi-link"></i> Necklaces</div>
+        <div class="sidebar-link"><i class="bi bi-link"></i> Toe Rings</div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>
